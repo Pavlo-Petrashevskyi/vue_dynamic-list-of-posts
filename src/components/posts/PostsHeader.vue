@@ -1,6 +1,6 @@
 <script lang="ts">
-import { defineComponent, PropType } from 'vue';
-import { User } from '../../types/User';
+import { defineComponent, type PropType } from 'vue';
+import type { User } from '../../types/User';
 
 export default defineComponent({
   props: {
@@ -28,11 +28,11 @@ export default defineComponent({
             <p>User: {{ user?.name }}</p>
           </div>
 
-          <a 
+          <a
             className="button is-light"
             @click="logOut"
-          > 
-            Logout 
+          >
+            Logout
           </a>
         </div>
       </div>
